@@ -11,9 +11,11 @@ interface props {
 const SlideSection = function ({ newestCourses }: props) {
   return (
     <>
-      <Container>
+      <Container className="d-flex flex-column py-5">
         <p className={styles.sectionTitle}>AULAS JA DISPONÍVEIS</p>
         <SlideComponent course={newestCourses} />
+      </Container>
+      <Container className="d-flex flex-column align-items-center">
         <Link href="/register">
           <Button outline color="light" className={styles.slideSectionBtn}>
             Se cadastre para acessar!
