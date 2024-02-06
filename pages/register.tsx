@@ -10,7 +10,6 @@ import { Button, Container, Form, FormGroup, Input, Label } from "reactstrap";
 
 const Register = function () {
   const router = useRouter();
-
   const [toastIsOpen, setToastIsOpen] = useState(false);
   const [toastMessage, setToastMessage] = useState("");
 

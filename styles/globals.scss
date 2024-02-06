@@ -7,6 +7,7 @@
 main {
   background-color: #151515;
   min-height: 100vh;
+
   color: white;
   p {
     margin: 0;
@@ -24,4 +25,12 @@ main {
 ::-webkit-scrollbar-thumb {
   background: #868686;
   border-radius: 40px;
+}
+
+@media (max-height: 100vh) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
