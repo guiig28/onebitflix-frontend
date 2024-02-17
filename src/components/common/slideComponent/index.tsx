@@ -19,8 +19,9 @@ const SlideComponent = function ({ course }: props) {
     <>
       <div>
         <Swiper
-          loop
+          loop={course.length > 4}
           pagination={false}
+          centerInsufficientSlides
           navigation
           centre
           style={{
