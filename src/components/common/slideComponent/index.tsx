@@ -47,9 +47,9 @@ const SlideComponent = function ({ course }: props) {
             },
           }}
         >
-          {course?.map((course) => (
-            <SwiperSlide key={course.id}>
-              <SlideCard course={course} />
+          {course?.map((crs) => (
+            <SwiperSlide key={crs.id}>
+              <SlideCard course={crs} />
             </SwiperSlide>
           ))}
         </Swiper>
