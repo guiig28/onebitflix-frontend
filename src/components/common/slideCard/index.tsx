@@ -8,7 +8,7 @@ interface props {
 
 const SlideCard = function ({ course }: props) {
   return (
-    <>
+    <div key={course.id}>
       <Link
         href={`/courses/${course.id}`}
         className="link-underline link-underline-opacity-0"
@@ -23,7 +23,7 @@ const SlideCard = function ({ course }: props) {
           <p className={styles.slideDescription}>{course.synopsis}</p>
         </div>
       </Link>
-    </>
+    </div>
   );
 };
 
