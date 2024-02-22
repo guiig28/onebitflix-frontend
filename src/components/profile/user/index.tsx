@@ -33,7 +33,7 @@ const UserForm = function () {
     });
   }, []);
 
-  const handleUserUpdate = async function (ev: FormEvent<HTMLFormElement>) {
+  const handleUserUpdate = async (ev: FormEvent<HTMLFormElement>) => {
     ev.preventDefault();
 
     const res = await profileService.userUpdate({
