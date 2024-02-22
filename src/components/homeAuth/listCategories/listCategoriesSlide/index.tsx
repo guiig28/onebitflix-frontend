@@ -1,3 +1,4 @@
+import PageSpinner from "@/src/components/common/pageSpinner";
 import SlideComponent from "@/src/components/common/slideComponent";
 import categoryService from "@/src/services/categoryService";
 import styles from "@/styles/slideCategory.module.scss";
@@ -14,7 +15,9 @@ const ListCategoriesSlide = function ({ categoryId, categoryName }: props) {
   );
 
   if (error) return error;
-  if (!data) return <p>Loading...</p>;
+  if (!data) {
+    return <PageSpinner />;
+  }
 
   return (
     <div key={categoryId}>

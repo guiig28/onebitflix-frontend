@@ -3,6 +3,7 @@ import useSWR from "swr";
 import { Container } from "reactstrap";
 import categoryService, { CategoryType } from "@/src/services/categoryService";
 import ListCategoriesSlide from "./listCategoriesSlide";
+import PageSpinner from "../../common/pageSpinner";
 
 const ListCategories = function () {
   const { data, error } = useSWR(
@@ -11,7 +12,9 @@ const ListCategories = function () {
   );
 
   if (error) return error;
-  if (!data) return <p>Loading...</p>;
+  if (!data) {
+    return <PageSpinner />;
+  }
 
   return (
     <>

@@ -3,12 +3,15 @@ import styles from "@/styles/slideCategory.module.scss";
 import courseService from "@/src/services/courseService";
 import SlideComponent from "../../common/slideComponent";
 import { Container } from "reactstrap";
+import PageSpinner from "../../common/pageSpinner";
 
 const FavoriteCategory = function () {
   const { data, error } = useSWR("/favorites", courseService.getFavCourses);
 
   if (error) return error;
-  if (!data) return <p>Loading...</p>;
+  if (!data) {
+    return <PageSpinner />;
+  }
 
   return (
     <>
