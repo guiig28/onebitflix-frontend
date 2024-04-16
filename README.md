@@ -4,4 +4,11 @@ OneBitFlix é um projeto fullstack feito para o trabalho de conclusão do curso 
 
 ## Principais Funcionalidades
 
-- 
+- Página inicial apresentando a plataforma e seus principais cursos
+- Página para registro do usuário
+- Página para login do usuário
+- Página autenticada para o usuário acessar os principais cursos
+- Barra de busca para acessar cursos especificos pelo nome
+- Página de cada curso com sua descrição, listagem de episódios e as opções de curtir e favoritar o curso
+- Pagina de stream de cada episódio
+- Página de perfil do usuário, onde é possivel alterar os dados e a senha
