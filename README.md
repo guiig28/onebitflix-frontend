@@ -39,3 +39,32 @@ Para clonar esse projeto, basta colar o seguinte comando:
 ```bash
 git clone https://github.com/guiig28/onebitflix-frontend.git
 ```
+
+Para instalar todas as dependências necessárias para o funcionamento da aplicação e para o seu desenvolvimento:
+
+```bash
+npm install
+```
+
+<h3>Inicializando o Back-End</h3>
+
+Para essa aplicação ser iniciada sem erros será necessário [inicializar a parte back-end desse projeto.](https://github.com/guiig28/onebitflix-backend/blob/main/README.md#inicializa%C3%A7%C3%A3o)
+
+<h3>Testando a aplicação</h3>
+
+Para testar em modo de desenvolvimento:
+
+```bash
+npm run dev
+```
+
+Para testar em modo de distribuição, será necessário primeiro converter a aplicação, para assim testá-la:
+
+```bash
+npm run build
+```
+
+```bash
+npm run start
+```
+
